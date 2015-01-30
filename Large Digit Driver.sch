@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16911,7 +16911,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08971" constant="no"/>
+<attribute name="VALUE" value="RA 6Pin SMD" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="LOCK" package="1X06_LOCK">
@@ -17524,7 +17527,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="SMD" value="OUT"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M06" device="SMD"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17550,8 +17553,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="JP13" library="SparkFun-Connectors" deviceset="M06" device="SMD" value="IN"/>
+<part name="JP13" library="SparkFun-Connectors" deviceset="M06" device="SMD"/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="TPIC6C596" device="SOIC" value="TPIC6C596"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value="Anchor"/>
+<part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value="Anchor"/>
 </parts>
 <sheets>
 <sheet>
@@ -17583,9 +17588,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="189.484" y1="107.188" x2="187.706" y2="102.108" width="0.2032" layer="97"/>
 <text x="165.608" y="116.586" size="1.778" layer="97">Segments on
 display:</text>
-<text x="137.16" y="78.74" size="1.778" layer="97">12V - Vf(worst case) = 0.4V</text>
-<text x="137.16" y="76.2" size="1.778" layer="97">0.4V = 0.02A * R</text>
-<text x="137.16" y="73.66" size="1.778" layer="97">R = 20</text>
+<text x="139.7" y="88.9" size="1.778" layer="97">12V - Vf(worst case) = 0.4V</text>
+<text x="139.7" y="86.36" size="1.778" layer="97">0.4V = 0.02A * R</text>
+<text x="139.7" y="83.82" size="1.778" layer="97">R = 20</text>
 </plain>
 <instances>
 <instance part="LOGO2" gate="G$1" x="134.62" y="12.7"/>
@@ -17670,6 +17675,8 @@ display:</text>
 </instance>
 <instance part="JP13" gate="G$1" x="71.12" y="127" rot="MR180"/>
 <instance part="U1" gate="U1" x="121.92" y="106.68"/>
+<instance part="JP3" gate="G$1" x="165.1" y="71.12" rot="R180"/>
+<instance part="JP14" gate="G$1" x="165.1" y="58.42" rot="R180"/>
 </instances>
 <busses>
 </busses>
