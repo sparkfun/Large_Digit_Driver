@@ -11149,6 +11149,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="80.38" y="46.92"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="MICRO-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OSHW-LOGO">
@@ -15830,6 +15836,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="40.16" y="23.55"/>
 </polygon>
 </symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OSHW-LOGO" prefix="LOGO">
@@ -15974,6 +15985,25 @@ logo. Default layer for the logo on the board is tSilk.</description>
 </technologies>
 </device>
 <device name="1_INCH" package="SFE_LOGO_NAME_FLAME_1">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17557,6 +17587,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U1" library="SparkFun-DigitalIC" deviceset="TPIC6C596" device="SOIC" value="TPIC6C596"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value="Anchor"/>
 <part name="JP14" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value="Anchor"/>
+<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -17677,6 +17709,8 @@ display:</text>
 <instance part="U1" gate="U1" x="121.92" y="106.68"/>
 <instance part="JP3" gate="G$1" x="165.1" y="71.12" rot="R180"/>
 <instance part="JP14" gate="G$1" x="165.1" y="58.42" rot="R180"/>
+<instance part="FID1" gate="G$1" x="246.38" y="20.32"/>
+<instance part="FID2" gate="G$1" x="241.3" y="20.32"/>
 </instances>
 <busses>
 </busses>
