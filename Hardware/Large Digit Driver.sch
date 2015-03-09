@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17396,21 +17396,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="20OHM1/10W1%(0603)" prefix="R" uservalue="yes">
-<description>RES-07862</description>
+<deviceset name="15OHM-1/10W-1%(0603)" prefix="R">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="0603-RES">
+<device name="0603" package="0603-RES">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-07862" constant="no"/>
-<attribute name="VALUE" value="20" constant="no"/>
+<attribute name="PROD_ID" value="RES-12570" constant="no"/>
+<attribute name="VALUE" value="15" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17552,7 +17551,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="">
 <attribute name="DESIGNER" value="N. Seidle"/>
-<attribute name="VERSION" value="v02"/>
+<attribute name="VERSION" value="v10"/>
 </part>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -17575,14 +17574,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP12" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="20OHM1/10W1%(0603)" device="SMD" value="20"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="15OHM-1/10W-1%(0603)" device="0603" value="15"/>
 <part name="JP13" library="SparkFun-Connectors" deviceset="M06" device="SMD"/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="TPIC6C596" device="SOIC" value="TPIC6C596"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH_LONGPAD" value="Anchor"/>
@@ -17625,6 +17624,10 @@ display:</text>
 <text x="139.7" y="83.82" size="1.778" layer="97">R = 20</text>
 <text x="68.58" y="157.48" size="1.778" layer="97">This design is intended to be used with SparkFun's 7-segment display - 6.5"
 https://www.sparkfun.com/products/8530</text>
+<text x="139.7" y="78.74" size="1.778" layer="97">During testing, 11 to 
+14 Ohms works well</text>
+<text x="68.58" y="149.86" size="1.778" layer="97">Best used with 6-pin cables
+https://www.sparkfun.com/products/10366</text>
 </plain>
 <instances>
 <instance part="LOGO2" gate="G$1" x="134.62" y="12.7"/>
@@ -17709,8 +17712,8 @@ https://www.sparkfun.com/products/8530</text>
 </instance>
 <instance part="JP13" gate="G$1" x="71.12" y="127" rot="MR180"/>
 <instance part="U1" gate="U1" x="121.92" y="106.68"/>
-<instance part="JP3" gate="G$1" x="165.1" y="71.12" rot="R180"/>
-<instance part="JP14" gate="G$1" x="165.1" y="58.42" rot="R180"/>
+<instance part="JP3" gate="G$1" x="165.1" y="68.58" rot="R180"/>
+<instance part="JP14" gate="G$1" x="165.1" y="55.88" rot="R180"/>
 <instance part="FID1" gate="G$1" x="246.38" y="20.32"/>
 <instance part="FID2" gate="G$1" x="241.3" y="20.32"/>
 </instances>
