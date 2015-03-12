@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -134,13 +134,13 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -198,6 +198,8 @@
 <dimension x1="0" y1="22.86" x2="45.72" y2="22.86" x3="22.86" y3="29.21" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="22.86" x2="6.35" y2="22.86" x3="3.175" y3="25.4" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <text x="-21.59" y="-8.89" size="1.778" layer="20" font="vector" ratio="15">Leave room on panel for these castelated holes to be milled.</text>
+<text x="5.588" y="5.842" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">OUT</text>
+<text x="43.688" y="5.842" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">IN</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1651,7 +1653,7 @@ design rules under a new name.</description>
 </element>
 <element name="JP3" library="SparkFun-Connectors" package="1X01_LONGPAD" value="Anchor" x="20.828" y="22.86"/>
 <element name="JP14" library="SparkFun-Connectors" package="1X01_LONGPAD" value="Anchor" x="24.765" y="22.86"/>
-<element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="18.542" y="22.098"/>
+<element name="FID1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="18.542" y="21.844"/>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="44.45" y="3.81"/>
 </elements>
 <signals>
