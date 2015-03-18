@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17622,12 +17622,14 @@ display:</text>
 <text x="139.7" y="88.9" size="1.778" layer="97">12V - Vf(worst case) = 0.4V</text>
 <text x="139.7" y="86.36" size="1.778" layer="97">0.4V = 0.02A * R</text>
 <text x="139.7" y="83.82" size="1.778" layer="97">R = 20</text>
-<text x="68.58" y="157.48" size="1.778" layer="97">This design is intended to be used with SparkFun's 7-segment display - 6.5"
+<text x="68.58" y="165.1" size="1.778" layer="97">This design is intended to be used with SparkFun's 7-segment display - 6.5"
 https://www.sparkfun.com/products/8530</text>
 <text x="139.7" y="78.74" size="1.778" layer="97">During testing, 11 to 
 14 Ohms works well</text>
-<text x="68.58" y="149.86" size="1.778" layer="97">Best used with 6-pin cables
+<text x="68.58" y="157.48" size="1.778" layer="97">Best used with 6-pin cables
 https://www.sparkfun.com/products/10366</text>
+<text x="68.58" y="149.86" size="1.778" layer="97">Board reqiures both 12V for 
+the LEDs and 5V for the IC.</text>
 </plain>
 <instances>
 <instance part="LOGO2" gate="G$1" x="134.62" y="12.7"/>
